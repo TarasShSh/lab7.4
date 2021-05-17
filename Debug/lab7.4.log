@@ -1,0 +1,8 @@
+﻿  lab74.cpp
+C:\Users\T\source\repos\lab7.4\lab7.4\lab74.cpp(45,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\T\source\repos\lab7.4\lab7.4\lab74.cpp(57,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\T\source\repos\lab7.4\lab7.4\lab74.cpp(69,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\T\source\repos\lab7.4\lab7.4\lab74.cpp(87,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\T\source\repos\lab7.4\lab7.4\lab74.cpp(88,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\T\source\repos\lab7.4\lab7.4\lab74.cpp(84): warning C4715: 'display': not all control paths return a value
+  lab7.4.vcxproj -> C:\Users\T\source\repos\lab7.4\Debug\lab7.4.exe

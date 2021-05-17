@@ -1,0 +1,470 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Contacts::number' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/T/source/repos/lab7.4/lab7.4/lab74.cpp"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 1,
+                  "endLine": 14,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Contacts@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Contacts::number"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Contacts::bdate' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/T/source/repos/lab7.4/lab7.4/lab74.cpp"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 1,
+                  "endLine": 14,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Contacts@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Contacts::bdate"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Contacts::type' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/T/source/repos/lab7.4/lab7.4/lab74.cpp"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 1,
+                  "endLine": 14,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Contacts@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Contacts::type"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Contacts::minute' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/T/source/repos/lab7.4/lab7.4/lab74.cpp"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 1,
+                  "endLine": 14,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Contacts@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "Contacts::minute"
+          }
+        },
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "Reading invalid data from '*c[](i).bdate':  the readable size is '8' bytes, but '12' bytes may be read."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/T/source/repos/lab7.4/lab7.4/lab74.cpp"
+                },
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?display@@YAXV?$map@HUContacts@@U?$less@H@std@@V?$allocator@U?$pair@$$CBHUContacts@@@std@@@3@@std@@HHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/T/source/repos/lab7.4/lab7.4/lab74.cpp"
+                          },
+                          "region": {
+                            "startLine": 77,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/T/source/repos/lab7.4/lab7.4/lab74.cpp"
+                          },
+                          "region": {
+                            "startLine": 77,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/T/source/repos/lab7.4/lab7.4/lab74.cpp"
+                          },
+                          "region": {
+                            "startLine": 80,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid read from '*c[](i).bdate[2]', (readable range is 0 to 1)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "Reading invalid data from '*c[](i).bdate':  the readable size is '8' bytes, but '12' bytes may be read."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/T/source/repos/lab7.4/lab7.4/lab74.cpp"
+                },
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 36
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?sort@@YAXAAV?$map@HUContacts@@U?$less@H@std@@V?$allocator@U?$pair@$$CBHUContacts@@@std@@@3@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/T/source/repos/lab7.4/lab7.4/lab74.cpp"
+                          },
+                          "region": {
+                            "startLine": 90,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/T/source/repos/lab7.4/lab7.4/lab74.cpp"
+                          },
+                          "region": {
+                            "startLine": 90,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/T/source/repos/lab7.4/lab7.4/lab74.cpp"
+                          },
+                          "region": {
+                            "startLine": 91,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/T/source/repos/lab7.4/lab7.4/lab74.cpp"
+                          },
+                          "region": {
+                            "startLine": 91,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/T/source/repos/lab7.4/lab7.4/lab74.cpp"
+                          },
+                          "region": {
+                            "startLine": 94,
+                            "startColumn": 36
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid read from '*c[](i).bdate[2]', (readable range is 0 to 1)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "Reading invalid data from '*c[](j).bdate':  the readable size is '8' bytes, but '12' bytes may be read."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/T/source/repos/lab7.4/lab7.4/lab74.cpp"
+                },
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 36
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?sort@@YAXAAV?$map@HUContacts@@U?$less@H@std@@V?$allocator@U?$pair@$$CBHUContacts@@@std@@@3@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/T/source/repos/lab7.4/lab7.4/lab74.cpp"
+                          },
+                          "region": {
+                            "startLine": 90,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/T/source/repos/lab7.4/lab7.4/lab74.cpp"
+                          },
+                          "region": {
+                            "startLine": 90,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/T/source/repos/lab7.4/lab7.4/lab74.cpp"
+                          },
+                          "region": {
+                            "startLine": 91,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/T/source/repos/lab7.4/lab7.4/lab74.cpp"
+                          },
+                          "region": {
+                            "startLine": 91,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/T/source/repos/lab7.4/lab7.4/lab74.cpp"
+                          },
+                          "region": {
+                            "startLine": 94,
+                            "startColumn": 36
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid read from '*c[](i).bdate[2]', (readable range is 0 to 1)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.28.29915.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "D:\\progs\\visualStudio\\VC\\Tools\\MSVC\\14.28.29910\\bin\\HostX86\\x86\\c1xx.dll -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x0110B1C0 -il C:\\Users\\T\\AppData\\Local\\Temp\\_CL_bccfad8aast -typedil -f lab74.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829915 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -FoDebug\\lab74.obj -FdDebug\\vc142.pdb -Gd -analyze:projectdirectory C:\\Users\\T\\source\\repos\\lab7.4\\lab7.4 -analyze:rulesetdirectory ;D:\\progs\\visualStudio\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset D:\\progs\\visualStudio\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin D:\\progs\\visualStudio\\VC\\Tools\\MSVC\\14.28.29910\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I D:\\progs\\visualStudio\\VC\\Tools\\MSVC\\14.28.29910\\include -I D:\\progs\\visualStudio\\VC\\Tools\\MSVC\\14.28.29910\\atlmfc\\include -I D:\\progs\\visualStudio\\VC\\Auxiliary\\VS\\include -I D:\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I D:\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I D:\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I D:\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I D:\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Users\\T\\source\\repos\\lab7.4\\lab7.4\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/T/source/repos/lab7.4/lab7.4/lab74.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "4e015ae2c7f0eaee1fb2a974561c682b"
+          }
+        }
+      ]
+    }
+  ]
+}
