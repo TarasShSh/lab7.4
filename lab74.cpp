@@ -55,35 +55,26 @@ void display(map<int, Contacts> c)
 		cout << "Рік народження: " << c[i].bdate[2] << endl;
 	}
 }
-void display(map<int, Contacts> c, int j)
+bool display(map<int, Contacts> c, int m)
 {
-	for (int i = j; i < c.size(); i++)
-	{
-		cout << "Прізвище контакта: " << c[i].surname << endl;
-		cout << "Ім’я контакта: " << c[i].name << endl;
-		cout << "Номер телефону: " << c[i].number << endl;
-		cout << "День народження: " << c[i].bdate[0] << endl;
-		cout << "Місяць народження: " << c[i].bdate[1] << endl;
-		cout << "Рік народження: " << c[i].bdate[2] << endl;
-	}
-}
-bool display(map<int, Contacts> c, int d, int m, int y)
-{
+	int counter = 0;
 	for (int i = 0; i < c.size(); i++)
 	{
-		if (c[i].bdate[0] == d && 
-			c[i].bdate[1] == m && 
-			c[i].bdate[2] == y)
+		if (c[i].bdate[1] == m)
 		{
-			display(c, i);
+			counter++;
+		}
+	}
+		if (counter >= 0)
+		{
+			cout << "К-сть контактів з " << m <<"-м місяцем народження: " << counter <<"." << endl;
 			return true;
 		}
 		else
 		{
-			cout << "Контактів з такою датою народження не знайдено." << endl;
+			cout << "Контактів з " << m << "-м місяцем народження не знайдено." << endl;
 			return false;
 		}
-	}
 }
 void sort(map<int, Contacts>& c)
 {
@@ -111,16 +102,17 @@ int main()
 	SetConsoleOutputCP(1251); // встановлення кодової сторінки win-cp1251
 	// (кирилиця) в потік виводу
 	map<int, Contacts> contact;
-	int tmp2, tmp3, tmp4, tmp5;
+	int tmp2, tmp3;
 	do
 	{
 		cout << "[1] Додати контакт" << endl;
-		cout << "[2] Вивести відповідно до дня народження" << endl;
+		cout << "[2] Вивести к-сть відповідно до місяця народження" << endl;
+		cout << "[3] Вивести наявні контакти" << endl;
 		cout << "[0] Вийти" << endl;
 		do
 		{
 			cin >> tmp2;
-		} while (tmp2 < 0 || tmp2 > 2);
+		} while (tmp2 < 0 || tmp2 > 3);
 		switch (tmp2)
 		{
 		case 1:
@@ -128,22 +120,16 @@ int main()
 			sort(contact);
 			break;
 		case 2:
-			cout << "День народження: ";
-			do
-			{
-				cin >> tmp3;
-			} while (tmp3 < 1 || tmp3 > 31);
+			
 			cout << "Місяць народження: ";
 			do
 			{
-				cin >> tmp4;
-			} while (tmp4 < 1 || tmp4 > 12);
-			cout << "Рік народження: ";
-			do
-			{
-				cin >> tmp5;
-			} while (tmp5 < 1 || tmp5 > 2003);
-			display(contact, tmp3, tmp4, tmp5);
+				cin >> tmp3;
+			} while (tmp3 < 1 || tmp3 > 12);
+			display(contact, tmp3);
+			break;
+		case 3:
+			display(contact);
 			break;
 		default:
 			break;
